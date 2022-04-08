@@ -1,5 +1,5 @@
-tochak
-koka kola
-chokolado
-slushalki
-pavlaka
+tochak x1
+koka kola x5
+chokolado x10
+slushalki x2
+pavlaka x2
