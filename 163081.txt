@@ -1,0 +1,121 @@
+4. git clone https://github.com/AKamelija/SI_2022_lab1_163081.git
+
+5.nano shopping_list.txt (za kreiranje i otvaranje na fajlot)
+  git add . (za dodavanje na fajlot)
+  git commit -m "Add 5 items in the shopping list" (komitnuvanje ili stavanje vo staged area)
+
+6. nano shopping_list.txt (otvaranje na fajlot)
+   git add . (za dodavanje na fajlot)
+   git commit -m "Add quantities to the items" (komitnuvanje ili stavanje vo staged area)
+
+7. git branch branch1
+   git branch branch2
+
+8. λ git log
+   commit f0cd887bc0b55db3bc4f4d0c50617672f7fc22e6 (HEAD -> master, branch2, branch1)
+   Author: AKamelija <kamelija.angelova@yahoo.com>
+   Date:   Fri Apr 8 15:51:26 2022 +0200
+
+     Add quantities to the items
+
+   commit 4aa83353a3b06d834547b3fdf126cfb4e10b1d40
+   Author: AKamelija <kamelija.angelova@yahoo.com>
+   Date:   Fri Apr 8 15:48:54 2022 +0200
+
+     Add 5 items to the shopping list
+
+   commit 102d99d161f7545f54e8118e722ccd0e36bbc4c5 (origin/master, origin/HEAD)
+   Author: AKamelija <52532316+AKamelija@users.noreply.github.com>
+   Date:   Fri Apr 8 15:44:19 2022 +0200
+
+     Initial commit
+
+9. git push origin master
+
+10. git checkout branch1 (za prefrluvanje na imenuvaniot branch)
+
+11. nano shopping_list.txt (za kreiranje i otvaranje na fajlot)
+    git add . (za dodavanje na fajlot)
+    git commit -m "Change quantity of item #5" (komitnuvanje ili stavanje vo staged area)
+
+12. git checkout master
+
+13. nano shopping_list.txt (za kreiranje i otvaranje na fajlot)
+    git add . (za dodavanje na fajlot)
+    git commit -m "Change quantity of item #2" (komitnuvanje ili stavanje vo staged area)
+
+14. git push origin master
+    git checkout branch1
+    git push origin branch1
+
+15. git checkout branch2
+
+16. nano shopping_list.txt
+    git commit -a -m "Modify item #4" (dodavanje i komituvanje na promenite)
+
+17. λ git log                                                         
+    commit fb7f37c46ddc94ee00bc0e5f6049159defd344df (HEAD -> branch2) 
+    Author: AKamelija <kamelija.angelova@yahoo.com>                   
+    Date:   Fri Apr 8 16:04:03 2022 +0200                             
+                                                                  
+       Modify item #4                                                
+                                                                  
+    commit f0cd887bc0b55db3bc4f4d0c50617672f7fc22e6                   
+    Author: AKamelija <kamelija.angelova@yahoo.com>                   
+    Date:   Fri Apr 8 15:51:26 2022 +0200                             
+                                                                  
+       Add quantities to the items                                   
+                                                                  
+    commit 4aa83353a3b06d834547b3fdf126cfb4e10b1d40                   
+    Author: AKamelija <kamelija.angelova@yahoo.com>                   
+    Date:   Fri Apr 8 15:48:54 2022 +0200                             
+                                                                  
+       Add 5 items to the shopping list                              
+                                                                  
+    commit 102d99d161f7545f54e8118e722ccd0e36bbc4c5                   
+    Author: AKamelija <52532316+AKamelija@users.noreply.github.com>   
+    Date:   Fri Apr 8 15:44:19 2022 +0200                             
+                                                                  
+       Initial commit                                                
+                                   
+18. nano shopping_list.txt
+    git add .
+    git commit --amend -m "Modify item #4 and add item #6"  (za dodavanje na posledniot komit)
+
+19. λ git commit --amend -m "Modify item #4 and add item #6"
+    [branch2 dfd4d09] Modify item #4 and add item #6
+    Date: Fri Apr 8 16:04:03 2022 +0200
+    1 file changed, 1 insertion(+), 1 deletion(-)
+
+    C:\Users\Kamelija\Desktop\SI_2022_lab1_163081 (branch2)
+    λ git log
+    commit dfd4d099ab0e1eda0dd050bc42d3f6c1a8c49d65 (HEAD -> branch2)
+    Author: AKamelija <kamelija.angelova@yahoo.com>
+    Date:   Fri Apr 8 16:04:03 2022 +0200
+
+       Modify item #4 and add item #6
+
+    commit f0cd887bc0b55db3bc4f4d0c50617672f7fc22e6
+    Author: AKamelija <kamelija.angelova@yahoo.com>
+    Date:   Fri Apr 8 15:51:26 2022 +0200
+
+       Add quantities to the items
+
+    commit 4aa83353a3b06d834547b3fdf126cfb4e10b1d40
+    Author: AKamelija <kamelija.angelova@yahoo.com>
+    Date:   Fri Apr 8 15:48:54 2022 +0200
+
+       Add 5 items to the shopping list
+
+    commit 102d99d161f7545f54e8118e722ccd0e36bbc4c5
+    Author: AKamelija <52532316+AKamelija@users.noreply.github.com>
+    Date:   Fri Apr 8 15:44:19 2022 +0200
+
+       Initial commit
+
+20. git checkout master
+    git merge branch1 ( se spojuva rekurzivno)
+
+21. git merge branch2 (se javuva konflikt)
+    nano shopping_list.txt ( za resavanje na konfliktot, ja izbrishav promenata od branch2)
+    git push

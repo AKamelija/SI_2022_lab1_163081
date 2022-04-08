@@ -3,3 +3,6 @@ koka kola x6
 chokolado x10
 slushalki x2
 pavlaka x3
+slushalki x3
+pavlaka x2
+
