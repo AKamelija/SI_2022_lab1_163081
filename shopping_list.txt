@@ -1,5 +1,6 @@
 tochak x1
 koka kola x5
 chokolado x10
-slushalki x2
+slushalki x3
 pavlaka x2
+penkalo x10
